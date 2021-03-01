@@ -8,13 +8,17 @@
   <style>
     html {
       margin: 0;
-      padding: 0;
+      padding: 40px;
     }
 
     body {
       margin: 0;
       padding: 5px;
       font-family: arial;
+    }
+
+    h1 {
+      margin: 0;
     }
 
     #woof-canvas {
@@ -135,7 +139,7 @@
             }),
           ),
           h('form', { onSubmit: (e) => this.enterLine(e) },
-            h('input', { class: 'woof-cmd', type: 'text', ref: (r) => { this.r = r; }, placeholder: 'Enter Forth code...', }),
+            h('input', { class: 'woof-cmd', type: 'text', ref: (r) => { this.r = r; }, placeholder: 'Enter code...', }),
             h('button', { type: 'submit' }, '=>'),
           ),
           //h('form', { onSubmit: (e) => })
