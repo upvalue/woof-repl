@@ -58,6 +58,8 @@
 
 : cr "\n" fmt ;
 
+\ \\\\\ ARRAYS
+
 \ \\\\\ STACK MANIPULATION
 
 : dup2 { a b } a b a b ;
